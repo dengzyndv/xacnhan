@@ -17,6 +17,7 @@
         const name = urlParams.get('name');
         const date = urlParams.get('date');
         const time = urlParams.get('time');
+        const id = urlParams.get("id");
 
         // Gửi dữ liệu đến webhook mới
         $.ajax({
@@ -25,7 +26,7 @@
             contentType: "application/json",
             data: JSON.stringify({
                 action: 1,
-                id: appointmentId
+                id: id
             }),
             success: function(response) {
                 $("#message").text("Xác nhận thành công!");
