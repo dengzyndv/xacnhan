@@ -21,7 +21,7 @@
 
         // Gửi dữ liệu đến webhook mới
         $.ajax({
-            url: "http://192.168.1.165:8080/cld/webhook-test/appointment-status", // Thay bằng URL webhook mới của n8n
+            url: "http://192.168.1.165:5678/webhook/appointment-status", // Thay bằng URL webhook mới của n8n
             type: "POST",
             contentType: "application/json",
             data: JSON.stringify({
