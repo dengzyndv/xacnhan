@@ -20,14 +20,12 @@
 
         // Gửi dữ liệu đến webhook mới
         $.ajax({
-            url: "http://localhost:5678/webhook/appointment-status", // Thay bằng URL webhook mới của n8n
+            url: "http://localhost:5678/webhook-test/appointment-status", // Thay bằng URL webhook mới của n8n
             type: "POST",
             contentType: "application/json",
             data: JSON.stringify({
-                action: "confirm",
-                name: name,
-                date: date,
-                time: time
+                action: 1,
+                id: appointmentId
             }),
             success: function(response) {
                 $("#message").text("Xác nhận thành công!");
