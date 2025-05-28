@@ -20,7 +20,7 @@
 
         // Gửi dữ liệu đến webhook mới
         $.ajax({
-            url: "YOUR_NEW_N8N_WEBHOOK_URL", // Thay bằng URL webhook mới của n8n
+            url: "http://localhost:5678/webhook/appointment-status", // Thay bằng URL webhook mới của n8n
             type: "POST",
             contentType: "application/json",
             data: JSON.stringify({
